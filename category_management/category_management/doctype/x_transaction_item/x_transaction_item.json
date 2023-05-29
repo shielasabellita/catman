@@ -1,0 +1,1740 @@
+{
+ "creation": "2020-09-11 02:46:39.278827",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "stock_no",
+  "specific_stock_no",
+  "specific_stock_no_v2",
+  "item_code",
+  "item_tax_template",
+  "column_break_3",
+  "description",
+  "uom",
+  "stock_uom",
+  "stock_uom_rate",
+  "conversion_factor",
+  "selling_uom",
+  "selling_conversion_factor",
+  "buying_rate_base_on_selling_uom",
+  "total_qty",
+  "total_amount",
+  "computations_section",
+  "rate",
+  "unit_cost",
+  "mark_up",
+  "final_srp",
+  "final_srp_cmgn",
+  "column_break",
+  "discounted_rate",
+  "mark_up_rate",
+  "margin",
+  "srp_cmgn",
+  "auto_computed_srp",
+  "stock_allocation_section",
+  "is_same_order_qty",
+  "col_break_99",
+  "base_order",
+  "base_order_clmn_1",
+  "section_break_9",
+  "is_same_srp",
+  "base_srp_clmn",
+  "base_srp",
+  "base_srp_clmn_1",
+  "section_break_99",
+  "available_stock_cty",
+  "column_break_45",
+  "cty_mark_up_rate",
+  "column_break_43",
+  "cty_margin",
+  "cty_col",
+  "cty",
+  "column_break_17",
+  "cty_uom",
+  "ctp_srp_clmn",
+  "cty_srp",
+  "cty_warehouse",
+  "section_break_13",
+  "available_stock_mll",
+  "column_break_26",
+  "mll_mark_up_rate",
+  "column_break_58",
+  "mll_margin",
+  "column_break_19",
+  "mll",
+  "column_break_56",
+  "mll_uom",
+  "mll_srp_clmn",
+  "mll_srp",
+  "mll_warehouse",
+  "section_break_21",
+  "available_stock_osm",
+  "column_break_69",
+  "osm_mark_up_rate",
+  "column_break_33",
+  "osm_margin",
+  "column_break_71",
+  "osm",
+  "column_break_23",
+  "osm_uom",
+  "osm_srp_clmn",
+  "osm_srp",
+  "osm_warehouse",
+  "section_break_17",
+  "available_stock_jrb",
+  "column_break_82",
+  "jrb_mark_up_rate",
+  "column_break_84",
+  "jrb_margin",
+  "column_break_40",
+  "jrb",
+  "col_break_100",
+  "jrb_uom",
+  "jrb_srp_clmn",
+  "jrb_srp",
+  "jrb_warehouse",
+  "section_break_25",
+  "available_stock_mlby",
+  "mlby_col",
+  "mlby_mark_up_rate",
+  "column_break_95",
+  "mlby_margin",
+  "column_break_97",
+  "mlby",
+  "column_break_27",
+  "mlby_uom",
+  "mlby_srp_clmn",
+  "mlby_srp",
+  "mlby_warehouse",
+  "section_break_29",
+  "available_stock_val",
+  "column_break_54",
+  "val_mark_up_rate",
+  "column_break_104",
+  "val_margin",
+  "column_break_106",
+  "val",
+  "column_break_31",
+  "val_uom",
+  "val_srp_clmn",
+  "val_srp",
+  "val_warehouse",
+  "section_break_33",
+  "available_stock_crm",
+  "column_break_61",
+  "crm_mark_up_rate",
+  "column_break_117",
+  "crm_margin",
+  "column_break_119",
+  "crm",
+  "column_break_35",
+  "crm_uom",
+  "crm_srp_clmn",
+  "crm_srp",
+  "crm_warehouse",
+  "section_break_37",
+  "available_stock_btu",
+  "column_break_68",
+  "btu_mark_up_rate",
+  "column_break_130",
+  "btu_margin",
+  "column_break_132",
+  "btu",
+  "column_break_39",
+  "btu_uom",
+  "btu_srp_clmn",
+  "btu_srp",
+  "btu_warehouse",
+  "section_break_41",
+  "available_stock_ilgmain",
+  "column_break_75",
+  "ilgmain_mark_up_rate",
+  "column_break_143",
+  "ilgmain_margin",
+  "column_break_145",
+  "ilgmain",
+  "column_break_42",
+  "ilgmain_uom",
+  "ilgmain_srp_clmn",
+  "ilgmain_srp",
+  "ilgmain_warehouse",
+  "section_break_45",
+  "available_stock_ilgmall",
+  "column_break_47",
+  "ilgmall_mark_up_rate",
+  "column_break_156",
+  "ilgmall_margin",
+  "column_break_158",
+  "ilgmall",
+  "column_break_87",
+  "ilgmall_uom",
+  "ilgmall_srp_clmn",
+  "ilgmall_srp",
+  "ilgmall_warehouse",
+  "section_break_49",
+  "available_stock_bml",
+  "column_break_88",
+  "bml_mark_up_rate",
+  "column_break_169",
+  "bml_margin",
+  "column_break_171",
+  "bml",
+  "column_break_51",
+  "bml_uom",
+  "bml_srp_clmn",
+  "bml_srp",
+  "bml_warehouse",
+  "section_break_53",
+  "available_stock_suki",
+  "column_break_96",
+  "suki_mark_up_rate",
+  "column_break_182",
+  "suki_margin",
+  "column_break_184",
+  "suki",
+  "column_break_55",
+  "suki_uom",
+  "suki_srp_clmn",
+  "suki_srp",
+  "suki_warehouse",
+  "section_break_57",
+  "available_stock_cmgn",
+  "column_break_102",
+  "cmgn_mark_up_rate",
+  "column_break_191",
+  "cmgn_margin",
+  "column_break_193",
+  "cmgn",
+  "column_break_59",
+  "cmgn_uom",
+  "cmgn_srp_clmn",
+  "cmgn_srp",
+  "cmgn_warehouse",
+  "section_break_61",
+  "available_stock_pml",
+  "column_break_109",
+  "pml_mark_up_rate",
+  "column_break_204",
+  "pml_margin",
+  "column_break_206",
+  "pml",
+  "column_break_63",
+  "pml_uom",
+  "pml_srp_clmn",
+  "pml_srp",
+  "pml_warehouse",
+  "section_break_65",
+  "available_stock_tbd",
+  "column_break_116",
+  "tbd_mark_up_rate",
+  "column_break_217",
+  "tbd_margin",
+  "column_break_219",
+  "tbd",
+  "column_break_67",
+  "tbd_uom",
+  "tbd_srp_clmn",
+  "tbd_srp",
+  "tbd_warehouse",
+  "section_break_69",
+  "available_stock_vmt",
+  "column_break_123",
+  "vmt_mark_up_rate",
+  "column_break_230",
+  "vmt_margin",
+  "column_break_232",
+  "vmt",
+  "column_break_72",
+  "vmt_uom",
+  "vmt_srp_clmn",
+  "vmt_srp",
+  "vmt_warehouse",
+  "section_break_73",
+  "available_stock_val2",
+  "column_break_131",
+  "val2_mark_up_rate",
+  "column_break_243",
+  "val2_margin",
+  "column_break_245",
+  "val2",
+  "column_break_76",
+  "val2_uom",
+  "val_2_srp_clmn",
+  "val2_srp",
+  "val2_warehouse",
+  "section_break_77",
+  "qty"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "stock_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Barcode/Stock No.",
+   "options": "Categorized Item",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "stock_no.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "stock_no.item_description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "columns": 1,
+   "default": "0.00",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "columns": 1,
+   "default": "0.00",
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0.00",
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "label": "Item Tax Template",
+   "options": "Item Tax Template"
+  },
+  {
+   "fieldname": "stock_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Allocation"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_same_order_qty",
+   "fieldtype": "Check",
+   "label": "is Same Order Qty"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Item SRP"
+  },
+  {
+   "columns": 1,
+   "default": "0.00",
+   "depends_on": "eval:doc.is_same_order_qty == 1",
+   "fieldname": "base_order",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Base Order"
+  },
+  {
+   "fieldname": "col_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_99",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "cty",
+   "fieldtype": "Float",
+   "label": "CTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cty_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "cty_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "cty_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mll",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "MLL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mll_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "mll_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "mll_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "osm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "OSM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "osm_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "osm_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "osm_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "jrb",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "JRB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "col_break_100",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jrb_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "jrb_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "jrb_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mlby",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "MLBY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mlby_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "mlby_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "mlby_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "val",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VAL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "val_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "val_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "val_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "crm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CRM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crm_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "crm_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "crm_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "btu",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "BTU",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "btu_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "btu_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "btu_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ilgmain",
+   "fieldtype": "Float",
+   "label": "ILG-MAIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ilgmain_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "ilgmain_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ilgmain_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ilgmall",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ILG-MALL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ilgmall_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "ilgmall_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ilgmall_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bml",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "BML",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bml_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "bml_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "bml_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_53",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "suki",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SUKI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "suki_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "suki_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "suki_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_57",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cmgn",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CMGN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_59",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cmgn_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "cmgn_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "cmgn_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_61",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pml",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "PML",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pml_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "pml_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "pml_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_65",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "tbd",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "TBD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tbd_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "tbd_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "tbd_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_69",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "vmt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VMT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_71",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vmt_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "vmt_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "vmt_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_73",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "val2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VAL2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_75",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "val2_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "val2_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "val2_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_77",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Available quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_cty",
+   "fieldtype": "Data",
+   "label": "CTY Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_mll",
+   "fieldtype": "Data",
+   "label": "MLL Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_osm",
+   "fieldtype": "Data",
+   "label": "OSM Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_jrb",
+   "fieldtype": "Data",
+   "label": "JRB Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_mlby",
+   "fieldtype": "Data",
+   "label": "MLBY Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_val",
+   "fieldtype": "Data",
+   "label": "VAL Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_crm",
+   "fieldtype": "Data",
+   "label": "CRM Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_btu",
+   "fieldtype": "Data",
+   "label": "BTU Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_ilgmain",
+   "fieldtype": "Data",
+   "label": "ILG-MAIN Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_ilgmall",
+   "fieldtype": "Data",
+   "label": "ILG-MALL Availble Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_bml",
+   "fieldtype": "Data",
+   "label": "BML Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_suki",
+   "fieldtype": "Data",
+   "label": "SUKI Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_cmgn",
+   "fieldtype": "Data",
+   "label": "CMGN Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_pml",
+   "fieldtype": "Data",
+   "label": "PML Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_tbd",
+   "fieldtype": "Data",
+   "label": "TBD Availble Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_stock_vmt",
+   "fieldtype": "Data",
+   "label": "VMT Available Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cty_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mlby_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_68",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_95",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_102",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_109",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_116",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_123",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_130",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_76",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_84",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "available_stock_val2",
+   "fieldtype": "Data",
+   "label": "VAL2 Available Stock",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "specific_stock_no_v2.stock_number",
+   "fetch_if_empty": 1,
+   "fieldname": "specific_stock_no",
+   "fieldtype": "Select",
+   "label": "Stock Number Name",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0.00",
+   "fieldname": "srp_cmgn",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Auto Computed SRP CMGN",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "discounted_rate",
+   "fieldtype": "Currency",
+   "label": "Discounted Rate",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mark_up",
+   "fieldtype": "Float",
+   "label": "Mark Up (%)"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "margin",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Margin (%)",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mark_up_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "description": "SRP that will show on the Print Formats (This field will be depreciated on v1.8)",
+   "fieldname": "final_srp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Final SRP"
+  },
+  {
+   "fieldname": "computations_section",
+   "fieldtype": "Section Break",
+   "label": "Computations"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "specific_stock_no_v2",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stock Number Code",
+   "options": "Stock Number V2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Unit Cost",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.default_unit_measure",
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_uom_rate",
+   "fieldtype": "Currency",
+   "label": "Stock UOM Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cty_srp",
+   "fieldtype": "Currency",
+   "label": "CTY SRP"
+  },
+  {
+   "fieldname": "mll_srp",
+   "fieldtype": "Currency",
+   "label": "MLL SRP"
+  },
+  {
+   "fieldname": "osm_srp",
+   "fieldtype": "Currency",
+   "label": "OSM SRP"
+  },
+  {
+   "fieldname": "jrb_srp",
+   "fieldtype": "Currency",
+   "label": "JRB SRP"
+  },
+  {
+   "fieldname": "mlby_srp",
+   "fieldtype": "Currency",
+   "label": "MLBY SRP"
+  },
+  {
+   "fieldname": "val_srp",
+   "fieldtype": "Currency",
+   "label": "VAL SRP"
+  },
+  {
+   "fieldname": "crm_srp",
+   "fieldtype": "Currency",
+   "label": "CRM SRP"
+  },
+  {
+   "fieldname": "btu_srp",
+   "fieldtype": "Currency",
+   "label": "BTU SRP"
+  },
+  {
+   "fieldname": "ilgmain_srp",
+   "fieldtype": "Currency",
+   "label": "ILG-MAIN SRP"
+  },
+  {
+   "fieldname": "ilgmall_srp",
+   "fieldtype": "Currency",
+   "label": "ILGMALL SRP"
+  },
+  {
+   "fieldname": "bml_srp",
+   "fieldtype": "Currency",
+   "label": "BML SRP"
+  },
+  {
+   "fieldname": "suki_srp",
+   "fieldtype": "Currency",
+   "label": "SUKI SRP"
+  },
+  {
+   "fieldname": "cmgn_srp",
+   "fieldtype": "Currency",
+   "label": "CMGN SRP"
+  },
+  {
+   "fieldname": "pml_srp",
+   "fieldtype": "Currency",
+   "label": "PML SRP"
+  },
+  {
+   "fieldname": "tbd_srp",
+   "fieldtype": "Currency",
+   "label": "TBD SRP"
+  },
+  {
+   "fieldname": "vmt_srp",
+   "fieldtype": "Currency",
+   "label": "VMT SRP"
+  },
+  {
+   "fieldname": "val2_srp",
+   "fieldtype": "Currency",
+   "label": "VAL2 SRP"
+  },
+  {
+   "fieldname": "ctp_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_srp_cmgn",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Final SRP CMGN"
+  },
+  {
+   "fieldname": "mll_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "osm_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jrb_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mlby_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "val_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crm_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "btu_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ilgmain_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ilgmall_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bml_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "suki_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cmgn_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pml_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tbd_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vmt_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "val_2_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_same_srp",
+   "fieldtype": "Check",
+   "label": "is Same SRP"
+  },
+  {
+   "default": "0.00",
+   "depends_on": "eval:doc.is_same_srp == 1",
+   "fieldname": "base_srp",
+   "fieldtype": "Currency",
+   "label": "Base SRP"
+  },
+  {
+   "fieldname": "base_srp_clmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_order_clmn_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_srp_clmn_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0.00",
+   "fieldname": "auto_computed_srp",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Auto Computed SRP",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "cty_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "CTY Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "cty_margin",
+   "fieldtype": "Float",
+   "label": "CTY Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mll_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "MLL Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mll_margin",
+   "fieldtype": "Float",
+   "label": "MLL Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "osm_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "OSM Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "osm_margin",
+   "fieldtype": "Float",
+   "label": "OSM Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_82",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "jrb_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "JRB Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "jrb_margin",
+   "fieldtype": "Float",
+   "label": "JRB Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mlby_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "MLBY Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_97",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mlby_margin",
+   "fieldtype": "Float",
+   "label": "MLBY Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_96",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "val_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "VAL Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_104",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "val_margin",
+   "fieldtype": "Float",
+   "label": "VAL Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_106",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "crm_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "CRM Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_117",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "crm_margin",
+   "fieldtype": "Float",
+   "label": "CRM Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_119",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "btu_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "BTU Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "btu_margin",
+   "fieldtype": "Float",
+   "label": "BTU Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_132",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "ilgmain_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "ILG-MAIN Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_143",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "ilgmain_margin",
+   "fieldtype": "Float",
+   "label": "ILG-MAIN Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_145",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "ilgmall_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "ILG-MALL Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_156",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "ilgmall_margin",
+   "fieldtype": "Float",
+   "label": "ILG-MALL Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_158",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "bml_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "BML Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_169",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "bml_margin",
+   "fieldtype": "Float",
+   "label": "BML Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_171",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_131",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "cmgn_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "CMGN Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_191",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "cmgn_margin",
+   "fieldtype": "Float",
+   "label": "CMGN Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_193",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "pml_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "PML Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_204",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "pml_margin",
+   "fieldtype": "Float",
+   "label": "PML Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_206",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "tbd_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "TBD Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_217",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "tbd_margin",
+   "fieldtype": "Float",
+   "label": "TBD Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_219",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "vmt_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "VMT Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_230",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "vmt_margin",
+   "fieldtype": "Float",
+   "label": "VMT Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_232",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "val2_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "VAL2 Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_243",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "val2_margin",
+   "fieldtype": "Float",
+   "label": "VAL2 Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_245",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "suki_mark_up_rate",
+   "fieldtype": "Float",
+   "label": "SUKI Mark Up Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_182",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "suki_margin",
+   "fieldtype": "Float",
+   "label": "SUKI Margin (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_184",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Conversion Factor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "selling_uom",
+   "fieldtype": "Link",
+   "label": "Selling UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "selling_conversion_factor",
+   "fieldtype": "Float",
+   "label": "Selling Conversion Factor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "buying_rate_base_on_selling_uom",
+   "fieldtype": "Currency",
+   "label": "Buying Rate base on Selling UOM",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-02-02 17:07:39.809796",
+ "modified_by": "sysman07.gaisano@gmail.com",
+ "module": "Category Management",
+ "name": "X Transaction Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

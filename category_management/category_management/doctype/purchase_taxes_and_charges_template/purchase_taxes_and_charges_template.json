@@ -1,0 +1,87 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2020-09-23 14:00:00.778889",
+ "description": "Standard tax template that can be applied to all Purchase Transactions. This template can contain list of tax heads and also other expense heads like \"Shipping\", \"Insurance\", \"Handling\" etc.\n\n#### Note\n\nThe tax rate you define here will be the standard tax rate for all **Items**. If there are **Items** that have different rates, they must be added in the **Item Tax** table in the **Item** master.\n\n#### Description of Columns\n\n1. Calculation Type: \n    - This can be on **Net Total** (that is the sum of basic amount).\n    - **On Previous Row Total / Amount** (for cumulative taxes or charges). If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total.\n    - **Actual** (as mentioned).\n2. Account Head: The Account ledger under which this tax will be booked\n3. Cost Center: If the tax / charge is an income (like shipping) or expense it needs to be booked against a Cost Center.\n4. Description: Description of the tax (that will be printed in invoices / quotes).\n5. Rate: Tax rate.\n6. Amount: Tax amount.\n7. Total: Cumulative total to this point.\n8. Enter Row: If based on \"Previous Row Total\" you can select the row number which will be taken as a base for this calculation (default is the previous row).\n9. Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both.\n10. Add or Deduct: Whether you want to add or deduct the tax.",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "is_default",
+  "disable",
+  "column_break_4",
+  "company",
+  "section_break_6",
+  "taxes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "label": " Default"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Table",
+   "label": "Purchase Taxes and Charges",
+   "options": "Purchase Taxes and Charges"
+  }
+ ],
+ "modified": "2020-09-23 14:50:39.766451",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Purchase Taxes and Charges Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,303 @@
+{
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2020-09-11 03:17:35.182513",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sync_to_erp",
+  "sync_status",
+  "section_break_2",
+  "x_transaction_type",
+  "supplier",
+  "supplier_name",
+  "company",
+  "payment_term",
+  "telephone",
+  "taxes_and_charges",
+  "email",
+  "is_single_warehouse",
+  "column_break_4",
+  "posting_date",
+  "reqd_by_date",
+  "strictly_ship_via",
+  "shipping_line_name",
+  "total_amount",
+  "discounting_section",
+  "md_discount",
+  "cascading_total",
+  "total_discount",
+  "column_break_22",
+  "md_discount_title",
+  "section_break_25",
+  "mark_up",
+  "column_break_27",
+  "price_list",
+  "section_break_29",
+  "items",
+  "section_break_13",
+  "branch_detail",
+  "remarks",
+  "table_data",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "x_transaction_type",
+   "fieldtype": "Select",
+   "label": "X Transaction Type",
+   "options": "X Purchase Order",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "default": "Gaisano",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.x_transaction_type == \"X Purchase Order\"",
+   "fetch_from": "supplier.payment_term",
+   "fieldname": "payment_term",
+   "fieldtype": "Link",
+   "label": "Payment Term",
+   "options": "Payment Term",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.x_transaction_type == \"X Purchase Order\"",
+   "fetch_from": "supplier.contact_number",
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "Telephone",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.x_transaction_type == \"X Purchase Order\"",
+   "fetch_from": "supplier.email_address",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_single_warehouse",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "is Single Warehouse"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reqd_by_date",
+   "fieldtype": "Date",
+   "label": "Reqd by Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "strictly_ship_via",
+   "fieldtype": "Link",
+   "label": "Strictly Ship Via",
+   "options": "Shipping Line",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discounting_section",
+   "fieldtype": "Section Break",
+   "label": "Discounting"
+  },
+  {
+   "fieldname": "md_discount",
+   "fieldtype": "Link",
+   "label": "MD Discount",
+   "options": "MD Discount"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Data",
+   "label": "Price List",
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "X Transaction Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_detail",
+   "fieldtype": "Table",
+   "label": "Branch Detail",
+   "options": "X Transaction Branch Detail"
+  },
+  {
+   "fieldname": "table_data",
+   "fieldtype": "Long Text",
+   "hidden": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "depends_on": "eval:doc.sync_status == 0",
+   "fieldname": "sync_to_erp",
+   "fieldtype": "Button",
+   "label": "Sync to ERP"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "taxes_and_charges",
+   "fieldtype": "Link",
+   "label": "Purchase Taxes and Charges Template",
+   "options": "Purchase Taxes and Charges Template",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "strictly_ship_via.shipping_line_name",
+   "fieldname": "shipping_line_name",
+   "fieldtype": "Read Only",
+   "label": "Shipping Line Name"
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Supplier Name"
+  },
+  {
+   "fetch_from": "md_discount.title_discount",
+   "fieldname": "md_discount_title",
+   "fieldtype": "Read Only",
+   "label": "MD Discount Title"
+  },
+  {
+   "default": "0",
+   "fetch_from": "md_discount.total_discount",
+   "fieldname": "total_discount",
+   "fieldtype": "Read Only",
+   "label": "Total Discount",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "mark_up",
+   "fieldtype": "Float",
+   "label": "Mark Up (%)",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "md_discount.cascading_total",
+   "fieldname": "cascading_total",
+   "fieldtype": "Read Only",
+   "label": "Cascading Total",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sync_status",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Synced to ERP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2022-02-28 01:22:54.372923",
+ "modified_by": "sysman07.gaisano@gmail.com",
+ "module": "Category Management",
+ "name": "X Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

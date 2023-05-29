@@ -1,0 +1,36 @@
+{
+ "creation": "2020-09-10 12:26:01.897776",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "barcode",
+  "barcode_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "barcode_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Barcode Type",
+   "options": "\nEAN\nUPC-A"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-10 12:29:34.015215",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Barcode",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,36 @@
+{
+ "creation": "2020-09-10 13:17:44.261974",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_tax_template",
+  "tax_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Tax Template",
+   "options": "Item Tax Template"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Item Category"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-10 17:01:35.886133",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Tax",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

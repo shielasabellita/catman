@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include category_management *.css
+recursive-include category_management *.csv
+recursive-include category_management *.html
+recursive-include category_management *.ico
+recursive-include category_management *.js
+recursive-include category_management *.json
+recursive-include category_management *.md
+recursive-include category_management *.png
+recursive-include category_management *.py
+recursive-include category_management *.svg
+recursive-include category_management *.txt
+recursive-exclude category_management *.pyc

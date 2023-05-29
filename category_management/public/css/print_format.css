@@ -1,0 +1,111 @@
+@import url('//db.onlinewebfonts.com/c/97a55c954a18d2daae22c5f9114794d5?family=Lucida+Console');
+@font-face {font-family: "Lucida Console"; src: url("//db.onlinewebfonts.com/t/97a55c954a18d2daae22c5f9114794d5.eot"); src: url("//db.onlinewebfonts.com/t/97a55c954a18d2daae22c5f9114794d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/97a55c954a18d2daae22c5f9114794d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/97a55c954a18d2daae22c5f9114794d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/97a55c954a18d2daae22c5f9114794d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/97a55c954a18d2daae22c5f9114794d5.svg#Lucida Console") format("svg"); }
+
+div.print-format * {
+    font-family: "Calibri", sans-serif !important;
+}
+
+.print-format table tr th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.print-format table tr td {
+    padding: 2px !important;
+    vertical-align: middle !important;
+}
+
+div.print-format div {
+    /*padding: 2px !important;*/
+    vertical-align: middle !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.custom-table-header {
+    background-color: rgba(123, 170, 204, 0.5);
+    /*background-color: #7baacc;*/
+    color: white !important;
+}
+
+.primary-color {
+    background-color: #4b4c9d !important;
+}
+
+.underserved-color {
+    background-color: rgba(245, 205, 121, 0.3)!important;
+}
+
+.overserved-color {
+    background-color: rgba(231, 127, 103, 0.3) !important;
+}
+
+.custom-border{
+    border: 2px solid slategray;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center !important;
+}
+
+align-items-start{
+    display: flex;
+    align-items: start !important;
+}
+
+align-items-end{
+    display: flex;
+    align-items: flex-end !important;
+}
+
+vertical-align-middle{
+    vertical-align: middle !important;
+}
+vertical-align-bottom{
+    vertical-align: bottom !important;
+}
+
+/* from bootstrap 4 useful styles*/
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+.w-75{
+    width: 75% !important;
+}
+
+.w-50{
+    width: 50% !important;
+}
+
+.w-25{
+    width: 25% !important;
+}
+
+.h-100{
+    height: 100% !important;
+}
+
+.h-75{
+    height: 75% !important;
+}
+
+.h-50{
+    height: 50% !important;
+}
+
+.h-25{
+    height: 25% !important;
+}

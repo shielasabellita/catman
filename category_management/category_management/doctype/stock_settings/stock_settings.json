@@ -1,0 +1,40 @@
+{
+ "creation": "2021-09-08 19:47:28.947518",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "delete_category_item"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "Delete Categorized Item if Item is deleted",
+   "fieldname": "delete_category_item",
+   "fieldtype": "Check",
+   "label": "Delete Category Item"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-09-08 19:47:28.947518",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Stock Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

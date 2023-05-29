@@ -1,0 +1,544 @@
+
+body {
+	background-color: #aec6cf;
+}
+
+h6.uppercase, .h6.uppercase {
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    color: #4B4C9D;
+    text-transform: uppercase;
+}
+.module-category.h6.uppercase{
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    color: #e0ebff;
+    text-transform: uppercase;
+}
+
+.text-muted {
+    color: #d6d6d6 !important;
+}
+
+.navbar .navbar-home img {
+    width: 30px;
+}
+
+.page-body {
+    background-color: white;
+}
+/*added*/
+.modules-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))!important;
+    min-width: 160px;
+    width: 100%;
+}
+
+.modules-container a.module-box-link {
+    flex: 1;
+    display: inline-block;
+    width: 100%;
+}
+
+.modules-container a.module-box-link {
+    display: inline-block;
+    clear: both;
+    /* flex: none; */
+}
+
+.module-box{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.modules-container a.module-box-link > i {
+    display: inline-block;
+    width: 100%;
+}
+
+.modules-container a.module-box-link > h4 > div i {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 50px!important;
+}
+
+.modules-container a.module-box-link > h4 > div {
+    text-align: center;
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.modules-container .border.module-box {
+    border-radius: 5px 20px 5px;
+    border-color: #4b4c9d;
+    padding: 0px!Important;
+}
+
+.modules-container i.fa.fa-check-square-o {
+    color: #4b7bec !important;
+}
+
+.modules-container i.octicon.octicon-heart {
+    color: #A62700 !important;
+}
+
+.modules-container i {
+    color: #c5bb15!important;
+    border-radius: 50%;
+    width: 110px !important;
+    margin: 15px !important;
+    padding: 30px !important;
+    background-color: white !important;
+}
+
+.modules-container i:hover {
+    background-color: black !important;
+}
+
+.modules-container .inline-block.relative {
+    display: none;
+}
+
+.control-label, .grid-heading-row {
+    font-size: 12px;
+    color: #8d99a6;
+}
+.border.module-box[data-module-name=Getting] {
+    background: #ddd!important;
+}
+
+i.octicon.octicon-repo:before {
+    color: #a29bfe !important;
+}
+
+i.octicon.octicon-tag {
+    color: #26de81!important;
+}
+
+i.octicon.octicon-briefcase {
+    color: #f19066!important;
+}
+
+i.octicon.octicon-package {
+    color: #ffd32a !important;
+}
+
+i.octicon.octicon-database {
+    color: #e17055 !important;
+}
+
+i.octicon.octicon-graph {
+    color: #227093 !important;
+}
+
+i.fa.fa-trophy {
+    color: #ffd32a !important;
+}
+
+i.octicon.octicon-rocket {
+    color: #786fa6!important;
+}
+
+i.octicon.octicon-broadcast {
+    color: #218c74!important;
+}
+
+i.octicon.octicon-organization {
+    color: #0fb9b1 !important;
+}
+
+i.octicon.octicon-credit-card {
+    color: #5a4db3!important;
+}
+
+i.glyphicon.glyphicon-certificate:before {
+    color: #ffb142 !important;
+}
+
+.modules-container a.module-box-link > h4 > div i {
+    /* color: red!important; */
+}
+
+i.octicon.octicon-milestone:before {
+    color:#74b9ff !important;
+}
+
+i.octicon.octicon-calendar {
+    color: #40739e !important;
+}
+
+i.octicon.octicon-settings {
+    color: #bd8516!important;
+}
+
+i.octicon.octicon-globe {
+    color: #4774cc!important;
+}
+
+i.octicon.octicon-device-camera-video {
+    color: #c3c3c3!important;
+}
+
+i.octicon.octicon-star:before {
+    color: #fdcb6e !important;
+}
+
+i.octicon.octicon-circuit-board {
+    color: #2d3436 !important;
+}
+
+.list-row:hover {
+  background-color:#cfd2e5;
+  font-size: 18px;
+}
+@media (min-width: 1000px){
+    .container {
+        width: 95%;
+    }
+    .col-md-10 {
+    width: 100%;
+  }
+}
+.layout-side-section {
+    display: none;
+}
+/*.list-row-head {
+  background-color: #f5f7fa;
+  opacity: 10;
+  border-bottom: 1px solid #d1d8dd !important;
+}*/
+.text-extra-muted {
+    color: #7baacc !important;
+}
+
+input[type="checkbox"]:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: '\f096';
+  visibility: visible;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 14px;
+  display: inline-block;
+  font-size: 25px;
+  color: #d1d8dd;
+  -webkit-transition: 150ms color;
+  -o-transition: 150ms color;
+  transition: 150ms color;
+  left: 999999px;
+}
+.has-error .form-control {
+  border-color: #ff5858;
+  background-color:#fbe36e;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.text-muted {
+    color: #502a2a !important;
+}
+[data-fieldname="amount"] {
+  text-align:right;
+}
+
+[data-fieldname="deducted"] {
+  text-align:right;
+}
+
+[data-fieldname="percent"] {
+  text-align:right;
+}
+
+[data-fieldname="lbl_onoff"] {
+  text-align:center;
+}
+.grid-form-body{
+  height: 700px;
+  overflow-y: scroll !important;
+}
+
+[data-fieldname="return_qty"] {
+    text-align:right;
+  }
+
+[data-fieldname="net_gross"] {
+    text-align:right;
+ }
+
+ [data-fieldname="discount_amount"] {
+    text-align:right;
+ }
+
+ [data-fieldname="less_discount"] {
+    text-align:right;
+ }
+ [data-fieldname="denomination"] {
+     text-align:center;
+     font-weight: bold;
+     font-size: 14px;
+ } [data-fieldname="x"] {
+     text-align:center;
+     font-weight: bold;
+     font-size: 14px;
+ }
+[data-fieldname="pieces"] {
+     text-align:center;
+     font-weight: bold;
+     font-size: 14px;
+ }
+
+ .grid-row:last-child {
+    border: none;
+    background-color: aliceblue;
+}
+
+ [data-fieldname="total_cash_amount"] {
+     font-weight: bold;
+     font-size: 14px;
+ }
+ [data-fieldname="total_cheque_amount"] {
+     font-weight: bold;
+     font-size: 14px;
+ }
+[data-fieldname="cheque_number"] {
+     font-weight: bold;
+     font-size: 10px;
+ }
+[data-fieldname="cheque_date"] {
+     font-weight: bold;
+     font-size: 10px;
+ }
+[data-fieldname="cheque_amount"] {
+     font-weight: bold;
+     font-size: 10px;
+ }
+[data-fieldname="cheque_payee"] {
+     font-weight: bold;
+     font-size: 10px;
+ }
+
+/*.layout-side-section .list-sidebar {
+  margin-top: -15px;
+  display: none;
+}*/
+/*/* navbar color*/
+/*.navbar-default {
+    background-color: #4a6882;
+    border-color: #52dea7;
+}*/
+/*seetings help font color*/
+/*.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  color: #f0f0f0;
+}*/
+/*border-section-box*/
+/*.border.section-box {
+   background-color: #8da6a4;
+   color: #ffffff;
+
+}*/
+/*border-color-font*/
+/*a {
+  color: #f1f8ff;
+  text-decoration: none;
+}*/
+/*buton setup for menu and refresh*/
+/*.btn-default {
+  color: #ffffff;
+  background-color: #4a6882;
+  border-color: #f7f7f700;
+}*/
+/*page-head*/
+/*.page-head {
+    border-bottom: 1px solid #006bb7;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 41px;
+    margin: auto;
+    background-color: #a4e68e;
+    z-index: 101;
+}*/
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.grid-static-col .input:focus{
+    background-color: transparent !important;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.list-row-col {
+
+    border-right: 0.02px solid  #aec6cf;
+}
+
+.list-row {
+  border-bottom: 0.02px solid #aec6cf;
+}
+
+
+
+input[data-fieldname="item_category_link"] ~ ul li a p strong{
+    display:none;
+}
+input[data-fieldname="item_category_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="item_category_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="item_category_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+
+}
+
+input[data-fieldname="item_form_link"] ~ ul li a p strong{
+    display:none;
+}
+input[data-fieldname="item_form_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="item_form_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="item_form_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+
+}
+
+input[data-fieldname="item_subform_link"] ~ ul li a p strong{
+    display:none;
+}
+input[data-fieldname="item_subform_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="item_subform_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="item_subform_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+
+}
+
+input[data-fieldname="item_variant_link"] ~ ul li a p strong{
+    display:none;
+}
+input[data-fieldname="item_variant_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="item_variant_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="item_variant_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+
+}
+
+
+input[data-fieldname="item_size_link"] ~ ul li a p strong{
+    display:none;
+}
+
+input[data-fieldname="item_size_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="item_size_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="item_size_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+
+}
+
+
+input[data-fieldname="item_color_link"] ~ ul li a p strong{
+    display:none;
+}
+input[data-fieldname="item_color_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="item_color_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="item_color_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+}
+
+input[data-fieldname="brand_link"] ~ ul li a p strong{
+    display:none;
+}
+input[data-fieldname="brand_link"] ~ ul li a p br{
+    display:none;
+}
+
+input[data-fieldname="brand_link"] ~ ul li a p strong:nth-last-child(1){
+    display:block !important;
+}
+input[data-fieldname="brand_link"] ~ ul li a p span{
+    font-weight:bold !important;
+    font-size:12px !important;
+}
+
+
+/* Darken font and input borders */
+.control-input input{
+    border: 1.5px solid #6585a6;
+}
+
+.control-label, .grid-heading-row {
+    font-size: 12px;
+    font-weight: 500;
+    color: #496aa6;
+}
+.border.module-box[data-module-name=Getting] {
+    background: #ddd!important;
+}

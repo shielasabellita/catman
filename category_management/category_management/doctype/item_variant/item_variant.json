@@ -1,0 +1,56 @@
+{
+ "allow_import": 1,
+ "autoname": "format:{item_subform}-{item_variant}",
+ "creation": "2020-08-13 23:30:55.575249",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_variant_code",
+  "item_variant",
+  "item_subform"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_variant_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Variant Code"
+  },
+  {
+   "fieldname": "item_variant",
+   "fieldtype": "Data",
+   "label": "Item Variant"
+  },
+  {
+   "fieldname": "item_subform",
+   "fieldtype": "Link",
+   "label": "Item Subform",
+   "options": "Item Subform"
+  }
+ ],
+ "modified": "2021-06-04 09:13:09.937531",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Variant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "item_variant",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

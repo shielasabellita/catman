@@ -1,0 +1,73 @@
+{
+ "allow_import": 1,
+ "autoname": "field:item_group",
+ "creation": "2020-08-13 22:48:01.199651",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_group_code",
+  "item_group",
+  "item_group_shortname",
+  "parent_group",
+  "both_departments"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_group_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item group code",
+   "unique": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item group",
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_group",
+   "fieldtype": "Link",
+   "label": "Parent group",
+   "options": "Parent Group"
+  },
+  {
+   "fieldname": "item_group_shortname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item group shortname",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "If Item Group if in Grocery and Department Store",
+   "fieldname": "both_departments",
+   "fieldtype": "Check",
+   "label": "Both Departments"
+  }
+ ],
+ "modified": "2022-01-06 14:03:31.204308",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "item_group",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

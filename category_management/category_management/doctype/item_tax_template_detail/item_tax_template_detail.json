@@ -1,0 +1,36 @@
+{
+ "creation": "2020-09-10 13:10:03.757442",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tax",
+  "tax_rate"
+ ],
+ "fields": [
+  {
+   "description": "Account",
+   "fieldname": "tax",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tax Rate"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-10 13:10:03.757442",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Tax Template Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

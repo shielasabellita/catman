@@ -1,0 +1,144 @@
+{
+ "creation": "2020-09-10 15:19:42.909262",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "uom",
+  "packing_unit",
+  "min_qty",
+  "column_break_5",
+  "item_name",
+  "brand",
+  "item_description",
+  "price_list_section",
+  "price_list",
+  "customer",
+  "supplier",
+  "currency",
+  "column_break_13",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "default": "Unit",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "packing_unit",
+   "fieldtype": "Int",
+   "label": "Packing Unit"
+  },
+  {
+   "default": "1",
+   "fieldname": "min_qty",
+   "fieldtype": "Data",
+   "label": "Minimum Qty"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fetch_from": "item_code.brand",
+   "fieldname": "brand",
+   "fieldtype": "Read Only",
+   "label": "Brand"
+  },
+  {
+   "fetch_from": "item_code.description",
+   "fieldname": "item_description",
+   "fieldtype": "Text",
+   "label": "Item Description"
+  },
+  {
+   "fieldname": "price_list_section",
+   "fieldtype": "Section Break",
+   "label": "Price List"
+  },
+  {
+   "default": "Standard Buying",
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "depends_on": "eval:doc.selling == 1",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "depends_on": "eval:doc.buying == 1",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "read_only": 1
+  },
+  {
+   "default": "PHP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  }
+ ],
+ "modified": "2021-09-25 11:28:38.373340",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Price",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_code",
+ "track_changes": 1
+}

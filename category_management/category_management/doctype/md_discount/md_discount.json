@@ -1,0 +1,91 @@
+{
+ "allow_import": 1,
+ "autoname": "field:discount",
+ "creation": "2020-10-01 11:44:57.508524",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discount",
+  "discount_type",
+  "supplier_party",
+  "supplier_name",
+  "title_discount",
+  "total_discount",
+  "cascading_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "discount_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Discount Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "title_discount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Discount Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier_party",
+   "fieldtype": "Link",
+   "label": "Supplier Party",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_discount",
+   "fieldtype": "Data",
+   "label": "Total Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cascading_total",
+   "fieldtype": "Read Only",
+   "label": "Cascading Total"
+  }
+ ],
+ "modified": "2022-01-29 13:35:02.806747",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "MD Discount",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "supplier_name,title_discount,discount_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title_discount",
+ "track_changes": 1
+}

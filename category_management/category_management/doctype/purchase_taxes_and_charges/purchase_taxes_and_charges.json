@@ -1,0 +1,182 @@
+{
+ "autoname": "hash",
+ "creation": "2020-09-23 14:50:04.992734",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "add_deduct_tax",
+  "charge_type",
+  "row_id",
+  "included_in_print_rate",
+  "column_break_6",
+  "account_head",
+  "description",
+  "accounting_dimensions_section",
+  "company",
+  "cost_center",
+  "column_break_12",
+  "branch",
+  "business_units",
+  "section_break_16",
+  "rate",
+  "section_break_18",
+  "tax_amount",
+  "tax_amount_after_discount_amount",
+  "total",
+  "column_break_22",
+  "base_tax_amount",
+  "base_tax_amount_after_discount_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Consider Tax or Charge for",
+   "options": "\nValuation and Total\nValuation\nTotal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_deduct_tax",
+   "fieldtype": "Select",
+   "label": "Add or Deduct",
+   "options": "\nAdd\nDeduct",
+   "reqd": 1
+  },
+  {
+   "fieldname": "charge_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nActual\nOn Net Total\nOn Previous Row Amount\nOn Previous Row Total\nOn Item Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "row_id",
+   "fieldtype": "Data",
+   "label": "Reference Row #"
+  },
+  {
+   "default": "0",
+   "fieldname": "included_in_print_rate",
+   "fieldtype": "Check",
+   "label": "Is this Tax included in Basic Rate?"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_head",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Head",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accounting_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "CC_01 - ADMINISTRATION - G",
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "business_units",
+   "fieldtype": "Link",
+   "label": "Business Units",
+   "options": "Business Units"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "tax_amount_after_discount_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount After Discount Amount",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "base_tax_amount",
+   "fieldtype": "Currency",
+   "label": "Amount (Company Currency)",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_tax_amount_after_discount_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount After Discount Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-23 15:09:28.392472",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Purchase Taxes and Charges",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

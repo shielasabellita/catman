@@ -1,0 +1,121 @@
+{
+ "allow_import": 1,
+ "autoname": "field:branch",
+ "creation": "2020-09-10 15:49:09.767169",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "internal_id",
+  "branch_code",
+  "bir_trade_name",
+  "bir_branch_code",
+  "chain",
+  "address",
+  "telephone_number",
+  "cellphone_number",
+  "fax_number",
+  "trn_code",
+  "centralize_po_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "unique": 1
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "bir_trade_name",
+   "fieldtype": "Data",
+   "label": "BIR Trade Name"
+  },
+  {
+   "fieldname": "chain",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Business Units"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "trn_code",
+   "fieldtype": "Data",
+   "label": "Trn Code"
+  },
+  {
+   "fieldname": "internal_id",
+   "fieldtype": "Data",
+   "label": "Internal ID"
+  },
+  {
+   "fieldname": "bir_branch_code",
+   "fieldtype": "Data",
+   "label": "BIR Branch Code"
+  },
+  {
+   "fieldname": "telephone_number",
+   "fieldtype": "Data",
+   "label": "Telephone Number"
+  },
+  {
+   "fieldname": "cellphone_number",
+   "fieldtype": "Data",
+   "label": "Cellphone Number"
+  },
+  {
+   "fieldname": "fax_number",
+   "fieldtype": "Data",
+   "label": "Fax Number"
+  },
+  {
+   "fieldname": "centralize_po_code",
+   "fieldtype": "Data",
+   "label": "Centralize PO Code"
+  }
+ ],
+ "modified": "2020-09-19 08:06:42.945342",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Branch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,37 @@
+{
+ "creation": "2020-09-25 15:00:59.712360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specification",
+  "value"
+ ],
+ "fields": [
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "print_width": "200px",
+   "reqd": 1,
+   "width": "200px"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Acceptance Criteria"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-09-25 15:00:59.712360",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Quality Inspection Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

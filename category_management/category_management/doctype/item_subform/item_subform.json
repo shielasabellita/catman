@@ -1,0 +1,58 @@
+{
+ "allow_import": 1,
+ "autoname": "format:{item_form}-{item_subform}",
+ "beta": 1,
+ "creation": "2020-08-13 22:51:26.618048",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_subform_code",
+  "item_subform",
+  "item_form"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_subform_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Subform Code"
+  },
+  {
+   "fieldname": "item_subform",
+   "fieldtype": "Data",
+   "label": "Item Subform"
+  },
+  {
+   "fieldname": "item_form",
+   "fieldtype": "Link",
+   "label": "Item Form",
+   "options": "Item Form"
+  }
+ ],
+ "modified": "2021-06-04 09:12:46.262368",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item Subform",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "item_subform",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_subform",
+ "track_changes": 1
+}

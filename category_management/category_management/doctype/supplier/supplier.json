@@ -1,0 +1,251 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:supplier_code",
+ "creation": "2020-09-10 17:16:31.503687",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_code",
+  "supplier_name",
+  "payee_name",
+  "supplier_short_name",
+  "country",
+  "default_bank_account",
+  "tax_id",
+  "tax_category",
+  "tax_withholding_category",
+  "is_transporter",
+  "is_internal_supplier",
+  "vat_nonvat",
+  "column_break_13",
+  "supplier_group",
+  "supplier_type",
+  "frequency",
+  "po_day",
+  "order_to_deliver",
+  "disabled",
+  "section_break_20",
+  "address_0",
+  "address_1",
+  "address_2",
+  "contact_person",
+  "contact_number",
+  "email_address",
+  "column_break_27",
+  "payment_term",
+  "mode_of_payment",
+  "total_supplier_discount",
+  "erp_section",
+  "erp_supplier_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payee_name",
+   "fieldtype": "Data",
+   "label": "Payee Name"
+  },
+  {
+   "fieldname": "supplier_short_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Short Name",
+   "reqd": 1
+  },
+  {
+   "default": "Philippines",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Data",
+   "label": "Default Bank Account"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Tax Category"
+  },
+  {
+   "fieldname": "tax_withholding_category",
+   "fieldtype": "Select",
+   "label": "Tax Withholding Category",
+   "options": "\nExpanded Withholding Tax - 10%\nExpanded Withholding Tax - 0%\nExpanded Withholding Tax - 5%\nExpanded Withholding Tax - 2%\nExpanded Withholding Tax - 1%"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_transporter",
+   "fieldtype": "Check",
+   "label": "Is Transporter"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_internal_supplier",
+   "fieldtype": "Check",
+   "label": "Is Internal Supplier"
+  },
+  {
+   "fieldname": "vat_nonvat",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Vat/Non-VAT",
+   "options": "\nVAT\nNon-VAT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier Group",
+   "options": "Supplier Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_type",
+   "fieldtype": "Select",
+   "label": "Supplier Type",
+   "options": "Company\nIndividual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "\nF1\nF2\nF3\nF4"
+  },
+  {
+   "fieldname": "po_day",
+   "fieldtype": "Select",
+   "label": "PO Day",
+   "options": "\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "order_to_deliver",
+   "fieldtype": "Data",
+   "label": "Order to Deliver"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_0",
+   "fieldtype": "Select",
+   "label": "Address 0(Region)"
+  },
+  {
+   "fieldname": "address_1",
+   "fieldtype": "Select",
+   "label": "Address 1(Province)"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Select",
+   "label": "Address 2(City)"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_term",
+   "fieldtype": "Data",
+   "label": "Payment Term"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "total_supplier_discount",
+   "fieldtype": "Data",
+   "label": "Total Supplier Discount"
+  },
+  {
+   "fieldname": "erp_section",
+   "fieldtype": "Section Break",
+   "label": "ERP"
+  },
+  {
+   "fieldname": "erp_supplier_code",
+   "fieldtype": "Read Only",
+   "label": "ERP Supplier Code"
+  },
+  {
+   "fieldname": "supplier_code",
+   "fieldtype": "Data",
+   "label": "Supplier Code",
+   "unique": 1
+  }
+ ],
+ "modified": "2021-05-12 09:53:33.512952",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Supplier",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "supplier_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "supplier_name",
+ "track_changes": 1
+}

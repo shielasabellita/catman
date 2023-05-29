@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="pdfkit-orientation" content="Landscape"/>
+    <title>X Purchase Order</title>
+
+    <link rel="stylesheet" href="assets/category_management/css/print_format.css">
+    <style>
+        .print-format{
+            orientation: landscape !important;
+        }
+        .print-format th{
+            text-align: center;
+            vertical-align: middle !important;
+            background-color: transparent !important;
+        }
+    </style>
+
+    <script>
+        // upon lock to landscape-primary mode
+        screen.orientation.lock("landscape");
+    </script>
+</head>
+<body>
+    <!-- Variables -->
+    {% set total_uom = get_total_uom(doc.items) %}
+
+    {% set supplier_details = frappe.get_list("Supplier", {"name": doc.supplier}, ["supplier_name", "address_0", "address_1", "address_2"])[0] %}
+    {% set address_0 = supplier_details.address_0 %}
+    {% set address_1 = supplier_details.address_1 %}
+    {% set address_2 = supplier_details.address_2 %}
+
+
+
+    <!-- Item SRP, Margin, and Markup Rate -->
+    {% set item_data = doc.get_item_srp(doc.items) %}
+    <!-- Gross Amount and Net amount -->
+    {% set total_amount_per_branch = doc.get_total_amount_per_po(doc.generated_purchase_order, doc.items) %}
+    <!--Header-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 justify-content-center">
+                <img src="assets/category_management/images/gaisano_logos.jpg" id="gaisano_logo">
+            </div>
+            <div class="col-xs-8">
+                <p style="text-align: center; font-size: 14pt; margin:0;"><stroget
+            <div class="col-xs-2"></div>
+        </div>
+    </div>
+    <!--End of Header-->
+
+    <div>
+        <h4 class="text-center" style="margin: 5px 0 0 0;">X Purchase Order</h4>
+        <h6 class="text-center"  style="margin: 0;">{{doc.name}}</h6>
+    </div>
+
+    <br>
+
+    <!-- Important Details -->
+    <div class="m-0 p-0 w-100 container" style="font-size: 11.5px">
+
+        <!-- Supplier, Posting Date -->
+        <div class="row">
+            <div class="col-xs-2 text-left bold pr-2"> Supplier Name </div>
+            <div class="col-xs-4"> ({{ doc.supplier }}) {{ doc.supplier_name }} </div>
+            <div class="col-xs-3 text-right bold pr-2"> Date </div>
+            <div class="col-xs-3">  {{ frappe.utils.formatdate(doc.posting_date,"MMMM dd, yyyy") }} </div>
+        </div>
+
+        <!-- Supplier Address, Terms -->
+        <div class="row">
+            <div class="col-xs-2 text-left bold pr-2"> Supplier Address </div>
+            <div class="col-xs-4"> Region {{address_0 or ""}} {{address_1 or ""}} {{address_2 or ""}} </div>
+            <div class="col-xs-3 text-right bold pr-2"> Terms </div>
+            <div class="col-xs-3"> {{doc.payment_term}} </div>
+        </div>
+
+        <br>
+
+        <!-- Notes -->
+        <div class="row">
+            <div class="col-xs-2 bold"> Memo </div>
+            <div class="col-xs-10 bold"> {{ doc.remarks }} </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 bold"> PLEASE ENTER OUR ORDER FOR THE FOLLOWING: </div>
+        </div>
+
+    </div>
+
+    <br>
+    <table class="table-bordered" style="font-size: 7pt; width: 100%; margin-left: auto !important;">
+        <tr class="custom-table-header">
+            <th class="text-center" width="7%">STOCK NO.</th>
+            <th class="text-center" width="25%">ITEM DESC</th>
+            <th class="text-center" width="8%">UOM</th>
+
+            {% for branch in total_uom %}
+                {% if branch != 'total_uom' %}
+                    <th class="text-center" width="8%"> {{branch.upper()}} </th>
+                {% endif %}
+            {% endfor %}
+
+            <th class="text-center" width="7%">RATE</th>
+            <th class="text-center" width="8%">SRP</th>
+
+            <th class="text-center" width="8%">SRP CMGN</th>
+            <th class="text-center" width="7%">MARKUP</th>
+            <th class="text-center" width="7%">MARGIN</th>
+        </tr>
+
+        <!-- Item Details -->
+        {% for item in doc.items %}
+            <tr>
+                <td class="text-center"> {{ item.specific_stock_no }} </td>
+                <td class="text-center"> {{ item.description }} </td>
+                <td class="text-center"> {{ item.uom }} </td>
+
+                <!-- show branches -->
+                  {% for branch in total_uom %}
+                    {% if branch != 'total_uom' %}
+                        <th class="text-center" width="8%"> {{ "{:,.0f}".format(item.get(branch)) }} </th>
+                    {% endif %}
+                {% endfor %}
+
+                <td class="text-right"> {{ "{:,.2f}".format(item.rate) }} </td>
+                <td class="text-right"> {{ "{:,.2f}".format(item_data.get(item.specific_stock_no_v2).srp) or "0.00" }}</td>
+                <!-- show cmgn SRP -->
+                {% if item.get('cmgn') > 0 %}
+                    <td class="text-right"> {{ "{:,.2f}".format(item.cmgn_srp) or "0.00" }}</td>
+                {% else %}
+                    <td class="text-right"> 0.00</td>
+                {% endif %}
+                <td class="text-right"> {{  "{:,.2f}".format(item_data.get(item.specific_stock_no_v2).markup) or "0.00" }} </td>
+                <td class="text-right"> {{ "{:,.2f}".format(item_data.get(item.specific_stock_no_v2).margin) or "0.00" }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+
+    <!-- Sum of item qty per branch -->
+    <!-- <table class="table-bordered" style="font-size: 7pt; width: 65%; margin: auto !important;">
+        <tr class="custom-table-header">
+            <th class="col-xs-2 text-center">BRANCH</th>
+            {% for uom in total_amount_per_branch['total_uom'] %}
+                <th class="col-xs-1 text-center"> {{ uom.upper() }} </th>
+            {% endfor %}
+            <th class="col-xs-2 text-center">GROSS AMOUNT</th>
+            <th class="col-xs-2 text-center">NET AMOUNT</th>
+        </tr>
+            {% for branch in total_amount_per_branch %}
+                {% if branch != 'total_uom' %}
+                    <tr> -->
+                        <!--Item code sa for the mean time-->
+                        <!-- <td class="text-center"> {{ branch.upper() }} </td>
+                        {% for uom in total_amount_per_branch[branch]['uom'] %}
+                            <td class="text-center"> {{ "{:,.0f}".format(total_amount_per_branch[branch]['uom'].get(uom)) }} </td>
+                        {% endfor %}
+                        <td class="text-right"> {{ "{:,.2f}".format(total_amount_per_branch[branch]['gross_amount']) }} </td>
+                        <td class="text-right"> {{ "{:,.2f}".format(total_amount_per_branch[branch]['net_amount']) }} </td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+    </table> -->
+
+    <!-- Sum of all items per Branch and UOM -->
+    <div class="container">
+        <div class="row justify-content-center" style="font-size: 7pt">
+            {% for uom in total_uom['total_uom'] %}
+                <th class="col-xs-1 text-center"> <strong> TOTAL QTY ({{ uom.upper() }}): </strong> {{ "{:,.0f}".format(total_uom['total_uom'].get(uom)) }} </th>
+            {% endfor %}
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Grand Total Computation-->
+    <div class="container w-100">
+        <div class="row">
+            <div class="col-xs-10 text-right bold"> TOTAL AMOUNT </div>
+            <div class="col-xs-2 text-right" style="border-bottom: 2px solid black;">
+                {{ "{:,.2f}".format(doc.total_amount) }}
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <p class="text-center" style="font-size: 7.5pt !important; margin:0 0 0 0 !important;">"NO INVOICES WILL BE PAID UNLESS ACCOMPANIED BY THE ORIGINAL COPY OF PURCHASE ORDER"</p>
+
+    <br><br>
+    <table width="100%">
+        <tr>
+            <td class="col-xs-2" style="padding: 1px 0 0 0 !important;"><strong>STRICTLY SHIP VIA</strong></td></td>
+            <td class="col-xs-7" style="padding: 1px 0 0 0 !important;">
+                <u>
+                    {% set ship_name = frappe.db.get_value("Shipping Line", {"name": doc.strictly_ship_via}, "shipping_line_name") %}
+                    {{ ship_name }}
+                </u>
+            </td>
+            <td class="col-xs-2 text-center" style="padding: 1px 0 0 0 !important;"><strong>GAISANO CITY</strong></td>
+        </tr>
+        <tr>
+            <td class="col-xs-2" style="padding: 1px 0 0 0 !important;"><strong>ON OR BEFORE</strong></td>
+            <td class="col-xs-5" style="padding: 1px 0 0 0 !important;">{{ frappe.utils.formatdate(doc.reqd_by_date,"MMMM dd, yyyy") }}</td>
+
+        </tr>
+        <tr>
+            <td colspan="2" class="" style="padding: 1px 0 0 0 !important; font-size: 7pt !important;">OTHERWISE ACCEPTANCE OF GOODS SUBJECT TO THE DISCRETION ON THE PURCHASER IN CHANGE. <br> <strong>"NO PARTIAL DELIVERY"</strong></td>
+            <td class="col-xs-7 text-center" style="padding: 1px 0 0 0 !important; font-size: 10pt; margin-top: 20px;">
+                <strong>BY: <u>{{ frappe.db.get_value("User", {"name": doc.owner}, "full_name")}}</u>
+                </strong>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="text-center" colspan="2" style="padding: 1px 0 0 0 !important; font-size: 7pt;"><strong>AUTHORIZED SIGNATURE</strong></td>
+        </tr>
+    </table>
+</body>
+</html>

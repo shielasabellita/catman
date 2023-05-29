@@ -1,0 +1,65 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:brand",
+ "creation": "2020-08-13 22:48:24.883085",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "disabled",
+  "brand_code",
+  "brand",
+  "brand_shortname"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Brand code"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Brand",
+   "unique": 1
+  },
+  {
+   "fieldname": "brand_shortname",
+   "fieldtype": "Data",
+   "label": "Brand Shortname"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "modified": "2021-10-28 09:41:13.831094",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Brand",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "brand",
+ "track_changes": 1
+}

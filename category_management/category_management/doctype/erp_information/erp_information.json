@@ -1,0 +1,74 @@
+{
+ "creation": "2020-09-21 03:27:58.438495",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url",
+  "username",
+  "password",
+  "token",
+  "credentials_section",
+  "api_key",
+  "api_secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "username"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "password"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "token"
+  },
+  {
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "ERP Credentials"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "api_secret",
+   "fieldtype": "Password",
+   "label": "API Secret"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-09-08 22:44:12.647124",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "ERP Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

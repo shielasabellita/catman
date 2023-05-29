@@ -1,0 +1,371 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "9898.########",
+ "creation": "2020-08-14 09:19:53.183025",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "disabled",
+  "has_supplier_barcode",
+  "supplier_barcode",
+  "categorized_item_id",
+  "stock_number",
+  "parent_group",
+  "item_group",
+  "item_group_shortname",
+  "item_category_link",
+  "item_category",
+  "item_category_shortname",
+  "brand_link",
+  "brand",
+  "brand_shortname",
+  "item_form_link",
+  "item_form",
+  "item_form_shortname",
+  "item_subform_link",
+  "item_subform",
+  "item_variant_link",
+  "item_variant",
+  "item_size_link",
+  "item_size",
+  "item_size_shortname",
+  "item_color_link",
+  "item_color",
+  "item_color_shortname",
+  "price",
+  "supplier",
+  "discount",
+  "vat_nonvat",
+  "uoms",
+  "item_description",
+  "barcode_retail",
+  "barcode_svg",
+  "sku",
+  "date_created",
+  "remarks",
+  "section_break_18",
+  "item_code",
+  "from_x_trans",
+  "synced"
+ ],
+ "fields": [
+  {
+   "description": "Separate it by comma (,) if multiple Stock Numbers. ",
+   "fieldname": "stock_number",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Stock Number",
+   "reqd": 1
+  },
+  {
+   "default": "now",
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "label": "Date created",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Data",
+   "label": "SKU",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "parent_group",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Parent Group",
+   "options": "Parent Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "brand_link.brand",
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Brand Name"
+  },
+  {
+   "fetch_from": "item_size_link.item_size",
+   "fieldname": "item_size",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Size Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "categorized_item_id",
+   "fieldtype": "Data",
+   "label": "Categorized item ID/Barcode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Item Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "barcode_retail",
+   "fieldtype": "Data",
+   "label": "Barcode Retail",
+   "read_only": 1
+  },
+  {
+   "fieldname": "barcode_svg",
+   "fieldtype": "Barcode",
+   "ignore_xss_filter": 1,
+   "label": "Barcode "
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "Item"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "discount",
+   "fieldtype": "Link",
+   "label": "Discount",
+   "options": "MD Discount"
+  },
+  {
+   "fieldname": "item_category_link",
+   "fieldtype": "Link",
+   "label": "Item Category",
+   "options": "Item Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_form_link",
+   "fieldtype": "Link",
+   "label": "Item Form",
+   "options": "Item Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_subform_link",
+   "fieldtype": "Link",
+   "label": "Item Subform",
+   "options": "Item Subform",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_variant_link",
+   "fieldtype": "Link",
+   "label": "Item Variant",
+   "options": "Item Variant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_color_link",
+   "fieldtype": "Link",
+   "label": "Item Color",
+   "options": "Item Color",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_category_link.item_category",
+   "fieldname": "item_category",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Category Name"
+  },
+  {
+   "fetch_from": "item_form_link.item_form",
+   "fieldname": "item_form",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Form Name"
+  },
+  {
+   "fetch_from": "item_subform_link.item_subform",
+   "fieldname": "item_subform",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Subform Name"
+  },
+  {
+   "fetch_from": "item_variant_link.item_variant",
+   "fieldname": "item_variant",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Variant Name"
+  },
+  {
+   "fetch_from": "item_color_link.item_color",
+   "fieldname": "item_color",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Color Name"
+  },
+  {
+   "fieldname": "item_size_link",
+   "fieldtype": "Link",
+   "label": "Item Size",
+   "options": "Item Size",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_group.item_group_shortname",
+   "fieldname": "item_group_shortname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Group Shortname"
+  },
+  {
+   "fetch_from": "item_category_link.item_category_shortname",
+   "fieldname": "item_category_shortname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Category Shortname"
+  },
+  {
+   "fieldname": "brand_link",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "brand_link.brand_shortname",
+   "fieldname": "brand_shortname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Brand Shortname"
+  },
+  {
+   "fieldname": "uoms",
+   "fieldtype": "Table",
+   "label": "UOMs",
+   "options": "UOM Conversion Detail"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_size_link.item_size_shortname",
+   "fieldname": "item_size_shortname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Size Shortname"
+  },
+  {
+   "fetch_from": "item_color_link.item_color_shortname",
+   "fieldname": "item_color_shortname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Color Shortname"
+  },
+  {
+   "fetch_from": "item_form_link.item_form_shortname",
+   "fieldname": "item_form_shortname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Form Shortname"
+  },
+  {
+   "fieldname": "vat_nonvat",
+   "fieldtype": "Select",
+   "label": "VAT/VAT - Exempt",
+   "options": "VAT - Exempt\nVAT",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_supplier_barcode",
+   "fieldtype": "Check",
+   "label": "Has Supplier Barcode"
+  },
+  {
+   "depends_on": "eval:doc.has_supplier_barcode == 1",
+   "fieldname": "supplier_barcode",
+   "fieldtype": "Data",
+   "label": "Supplier Barcode"
+  },
+  {
+   "default": "0",
+   "fieldname": "from_x_trans",
+   "fieldtype": "Check",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "synced",
+   "fieldtype": "Check",
+   "label": "Synced",
+   "read_only": 1
+  }
+ ],
+ "modified": "2022-01-18 12:18:26.274745",
+ "modified_by": "sysman07.gaisano@gmail.com",
+ "module": "Category Management",
+ "name": "Categorized Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "price,stock_number",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_description",
+ "track_changes": 1
+}

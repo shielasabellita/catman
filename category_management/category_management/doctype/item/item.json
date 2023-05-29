@@ -1,0 +1,437 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2020-09-10 12:30:08.140931",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "item_code",
+  "item_name",
+  "item_short_name",
+  "parent_item_group",
+  "item_group",
+  "item_category",
+  "is_item_from_hub",
+  "default_unit_measure",
+  "vat_nonvat",
+  "column_break_11",
+  "disabled",
+  "allow_alternative_item",
+  "maintain_stock",
+  "include_item_from_manufacturing",
+  "opening_stock",
+  "valuation_rate",
+  "freight_cost",
+  "standard_buying_rate",
+  "update_price_list",
+  "standard_rate",
+  "section_break_22",
+  "brand",
+  "description",
+  "item_prices_section",
+  "item_prices_data",
+  "item_prices_table",
+  "sb_barcodes",
+  "barcodes",
+  "section_break_26",
+  "stock_number",
+  "column_break_28",
+  "barcode_retail",
+  "erp_item_code",
+  "discount",
+  "uom_section",
+  "uoms",
+  "purchase_details",
+  "is_purchase_item",
+  "default_purchase_unit_of_measure",
+  "minimum_order_qty",
+  "safety_stock",
+  "column_break_37",
+  "lead_time_in_days",
+  "last_purchase_rate",
+  "supplier_details_section",
+  "supplier_items",
+  "sales_details_section",
+  "default_sales_unit_of_measure",
+  "is_sales_item",
+  "column_break_45",
+  "max_discount",
+  "item_tax_section",
+  "taxes",
+  "inspection_criteria",
+  "inspection_required_before_purchase",
+  "inspection_required_before_delivery",
+  "quality_inspection_template",
+  "synced"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_short_name",
+   "fieldtype": "Data",
+   "label": "Item Short Name"
+  },
+  {
+   "fieldname": "parent_item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Item group",
+   "options": "Parent Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Data",
+   "label": "Item Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_item_from_hub",
+   "fieldtype": "Check",
+   "label": "Is Item From Hub"
+  },
+  {
+   "default": "Unit",
+   "fieldname": "default_unit_measure",
+   "fieldtype": "Link",
+   "label": "Default Unit Measure",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vat_nonvat",
+   "fieldtype": "Select",
+   "label": "Vat / Vat-Exempt",
+   "options": "\nVAT\nVAT - Exempt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_alternative_item",
+   "fieldtype": "Check",
+   "label": "Allow Alternative Item"
+  },
+  {
+   "default": "1",
+   "fieldname": "maintain_stock",
+   "fieldtype": "Check",
+   "label": "Maintain Stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_item_from_manufacturing",
+   "fieldtype": "Check",
+   "label": "Include Item From Manufacturing"
+  },
+  {
+   "fieldname": "opening_stock",
+   "fieldtype": "Float",
+   "label": "Opening Stock"
+  },
+  {
+   "fieldname": "valuation_rate",
+   "fieldtype": "Currency",
+   "label": "Valuation Rate"
+  },
+  {
+   "fieldname": "freight_cost",
+   "fieldtype": "Currency",
+   "label": "Freight Cost"
+  },
+  {
+   "fieldname": "standard_buying_rate",
+   "fieldtype": "Currency",
+   "label": "Standard Buying Rate"
+  },
+  {
+   "fieldname": "update_price_list",
+   "fieldtype": "Button",
+   "label": "UPDATE PRICE LIST"
+  },
+  {
+   "fieldname": "standard_rate",
+   "fieldtype": "Currency",
+   "label": "Standard Selling Rate"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sb_barcodes",
+   "fieldtype": "Section Break",
+   "label": "Barcodes"
+  },
+  {
+   "fieldname": "barcodes",
+   "fieldtype": "Table",
+   "label": "Barcodes",
+   "options": "Item Barcode"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stock_number",
+   "fieldtype": "Table",
+   "label": "Stock Number",
+   "options": "Stock Number"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "barcode_retail",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Barcode Retail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "uom_section",
+   "fieldtype": "Section Break",
+   "label": "Units of Measure"
+  },
+  {
+   "fieldname": "uoms",
+   "fieldtype": "Table",
+   "label": "UOMs",
+   "options": "UOM Conversion Detail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "purchase_details",
+   "fieldtype": "Section Break",
+   "label": "Purchase, Replenishment Details"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_purchase_item",
+   "fieldtype": "Check",
+   "label": "Is Purchase Item"
+  },
+  {
+   "fieldname": "default_purchase_unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Default Purchase Unit of Measure",
+   "options": "UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "minimum_order_qty",
+   "fieldtype": "Float",
+   "label": "Minimum Order Qty"
+  },
+  {
+   "fieldname": "safety_stock",
+   "fieldtype": "Float",
+   "label": "Safety Stock"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_time_in_days",
+   "fieldtype": "Int",
+   "label": "Lead Time in days"
+  },
+  {
+   "fieldname": "last_purchase_rate",
+   "fieldtype": "Float",
+   "label": "Last Purchase Rate"
+  },
+  {
+   "fieldname": "supplier_details_section",
+   "fieldtype": "Section Break",
+   "label": "Supplier Details"
+  },
+  {
+   "fieldname": "supplier_items",
+   "fieldtype": "Table",
+   "label": "Supplier Items",
+   "options": "Item Supplier"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sales_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Details"
+  },
+  {
+   "fieldname": "default_sales_unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Default Sales Unit of Measure",
+   "options": "UOM"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_sales_item",
+   "fieldtype": "Check",
+   "label": "Is Sales Item"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "max_discount",
+   "fieldtype": "Float",
+   "label": "Max Discount(%)"
+  },
+  {
+   "fieldname": "item_tax_section",
+   "fieldtype": "Section Break",
+   "label": "Item Tax"
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Table",
+   "label": "Taxes",
+   "options": "Item Tax"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ITM_DG.#########.\nITM_GR.#########.\nITM_FA.#########.\nITM_SE.#########.\nITM_CS.#########.\nITM_RM.#########.\nITM_SA.#########.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "erp_item_code",
+   "fieldtype": "Data",
+   "label": "ERP Item Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inspection_criteria",
+   "fieldtype": "Section Break",
+   "label": "Inspection Criteria",
+   "options": "fa fa-search"
+  },
+  {
+   "fieldname": "inspection_required_before_purchase",
+   "fieldtype": "Data",
+   "label": "Inspection Required before Purchase"
+  },
+  {
+   "fieldname": "inspection_required_before_delivery",
+   "fieldtype": "Data",
+   "label": "Inspection Required before Delivery"
+  },
+  {
+   "depends_on": "eval:(doc.inspection_required_before_purchase || doc.inspection_required_before_delivery)",
+   "fieldname": "quality_inspection_template",
+   "fieldtype": "Link",
+   "label": "Quality Inspection Template",
+   "options": "Quality Inspection Template"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Link",
+   "label": "Discount",
+   "options": "MD Discount"
+  },
+  {
+   "fieldname": "item_prices_section",
+   "fieldtype": "Section Break",
+   "label": "Item Prices"
+  },
+  {
+   "description": "For fix only. (e.g. Error on first creation of item sync due to missing UOM) <br>\nNote: for first syncing purposes only",
+   "fieldname": "item_prices_table",
+   "fieldtype": "Table",
+   "label": "Item Prices Table",
+   "options": "Item Prices"
+  },
+  {
+   "default": "0",
+   "fieldname": "synced",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Synced",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_prices_data",
+   "fieldtype": "Long Text",
+   "label": "Item Prices Data"
+  }
+ ],
+ "modified": "2021-12-07 14:13:02.689437",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "item_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_name",
+ "track_changes": 1
+}

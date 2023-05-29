@@ -1,0 +1,98 @@
+{
+ "creation": "2021-05-12 11:08:53.457878",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bulk_syncing_section",
+  "force__eod_available_stock_syncing",
+  "available_stock_syncing_section",
+  "eod_item_syncing",
+  "real_time_item_api",
+  "warehouse_to_be_synced_section",
+  "warehouse",
+  "item_syncing_section",
+  "sync_item_on_validate"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "eod_item_syncing",
+   "fieldtype": "Check",
+   "label": "Enable EOD Available Stock Syncing"
+  },
+  {
+   "default": "0",
+   "description": "Default syncing preference for User not in \"User Sync Preference\" List",
+   "fieldname": "real_time_item_api",
+   "fieldtype": "Check",
+   "label": "Enable Real-time Available Stock API"
+  },
+  {
+   "fieldname": "bulk_syncing_section",
+   "fieldtype": "Section Break",
+   "label": "Bulk Syncing"
+  },
+  {
+   "fieldname": "available_stock_syncing_section",
+   "fieldtype": "Section Break",
+   "label": "Available Stock Syncing"
+  },
+  {
+   "fieldname": "force__eod_available_stock_syncing",
+   "fieldtype": "Button",
+   "label": "Force  EOD Available Stock Syncing"
+  },
+  {
+   "fieldname": "warehouse_to_be_synced_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse To Be Synced"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Table",
+   "label": "Warehouse",
+   "options": "PO Default Warehouse"
+  },
+  {
+   "fieldname": "item_syncing_section",
+   "fieldtype": "Section Break",
+   "label": "Item Syncing"
+  },
+  {
+   "default": "0",
+   "fieldname": "sync_item_on_validate",
+   "fieldtype": "Check",
+   "label": "Sync Item on Validate"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-11-06 15:52:31.658710",
+ "modified_by": "Administrator",
+ "module": "Category Management",
+ "name": "Sync Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Purchase Manager",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
